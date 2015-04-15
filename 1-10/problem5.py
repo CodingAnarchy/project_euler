@@ -9,6 +9,5 @@ from lib.primes import multiplicity
 mults = multiplicity(20)
 result = 1
 for k, v in mults.iteritems():
-    print k, v
     result *= k ** v
 print result
