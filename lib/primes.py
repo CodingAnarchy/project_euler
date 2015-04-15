@@ -1,14 +1,29 @@
 from collections import OrderedDict
 
-def primes_sieve(lim):
-    a = [True] * lim
-    a[0] = a[1] = False
 
-    for (i, isprime) in enumerate(a):
+def primes_sieve(lim):
+    primes = [True] * lim
+    primes[0] = primes[1] = False
+    for i, isprime in enumerate(primes):
         if isprime:
+            primes[i*2::i] = [False] * (((lim - 1) / i) - 1)
             yield i
-            for n in xrange(i * i, lim, i):
-                a[n] = False
+
+
+def fast_nth_prime(n, lim=125000):
+    if lim % 2 != 0:
+        lim += 1
+    primes = [True] * lim
+    primes[0] = primes[1] = False
+    count = 0  # how many primes have we found?
+    for i, isprime in enumerate(primes):
+        if isprime:
+            # sieve out non-primes by multiples of known primes
+            primes[i*2::i] = [False] * (((lim - 1) / i) - 1)
+            count += 1
+        if count == n:
+            return i
+    return False
 
 
 def multiplicity(n):
