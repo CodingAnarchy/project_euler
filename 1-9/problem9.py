@@ -1,5 +1,6 @@
 from math import sqrt
 from lib.divisors import gcd
+from lib.utils import prod
 
 
 def pyth_triplet(s):
@@ -20,4 +21,4 @@ def pyth_triplet(s):
                     return a, b, c
                 k += 2
 
-print pyth_triplet(1000)
+print prod(pyth_triplet(1000))
