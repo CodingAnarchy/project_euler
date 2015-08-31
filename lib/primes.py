@@ -6,7 +6,7 @@ def primes_sieve(lim):
     primes[0] = primes[1] = False
     for i, isprime in enumerate(primes):
         if isprime:
-            primes[i*2::i] = [False] * (((lim - 1) / i) - 1)
+            primes[i * 2::i] = [False] * (((lim - 1) / i) - 1)
             yield i
 
 
@@ -19,7 +19,7 @@ def fast_nth_prime(n, lim=125000):
     for i, isprime in enumerate(primes):
         if isprime:
             # sieve out non-primes by multiples of known primes
-            primes[i*2::i] = [False] * (((lim - 1) / i) - 1)
+            primes[i * 2::i] = [False] * (((lim - 1) / i) - 1)
             count += 1
         if count == n:
             return i
