@@ -3,18 +3,13 @@ from lib.utils import sum_factors
 
 start = time.time()
 
-limit = 28123
+limit,total = 28123, 0
 abundant = set()
-for i in range(1, limit):
+for i in xrange(1, limit):
     if sum_factors(i) > i:
         abundant.add(i)
-
-pairs = set()
-for x in abundant:
-    for y in abundant:
-        pairs.add(x + y)
-
-numbers = set(range(1, limit))
+    if not any( (i-a in abundant) for a in abundant):
+        total += i
 
 total = sum(numbers - pairs)
 elapsed = time.time() - start
