@@ -15,4 +15,9 @@ def sum_digits(n):
 
 
 def sum_factors(n):
-    return sum([i for i in range(1, n) if n % i == 0])
+    s = 1
+    t = sqrt(n)
+    for i in range(2, int(t)+1):
+        if n % i == 0: s += i + n/i
+    if t == int(t): s -= t    #correct s if n is a perfect square
+    return s
