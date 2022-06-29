@@ -17,6 +17,7 @@
 # Backup Files #
 *~
 *#
+*.swp
 
 # Miscellaneous IDE files #
 .idea
