@@ -22,4 +22,4 @@ def squared_sum(n):
 def sum_squares(n):
     return ((2 * n + 1) * (n + 1) * n) / 6
 
-print squared_sum(100) - sum_squares(100)
+print(squared_sum(100) - sum_squares(100))

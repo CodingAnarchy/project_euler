@@ -10,4 +10,4 @@ mults = multiplicity(20)
 result = 1
 for k, v in mults.iteritems():
     result *= k ** v
-print result
+print(result)

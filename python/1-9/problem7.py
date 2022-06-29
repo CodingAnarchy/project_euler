@@ -6,4 +6,4 @@ What is the 10 001st prime number?
 
 from lib.primes import fast_nth_prime
 
-print fast_nth_prime(10001)
+print(fast_nth_prime(10001))

@@ -23,4 +23,4 @@ def even_sum(f):
     psi = (-golden) ** (-3)
     return (1 / sqrt(5)) * (phi * (1 - phi ** k) / (1 - phi) - psi * (1 - psi ** k) / (1 - psi))
 
-print even_sum(4000000)
+print(even_sum(4000000))

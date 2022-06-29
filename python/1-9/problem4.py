@@ -9,5 +9,5 @@ def find_max_palindrome(minimum=100, maximum=999):
 
     return max_palindrome
 
-print find_max_palindrome()
+print(find_max_palindrome())
 
