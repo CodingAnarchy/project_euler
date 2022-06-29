@@ -1,13 +1,14 @@
 import operator
 import math
+import functools
 
 
 def prod(iterable):
-    return reduce(operator.mul, iterable)
+    return functools.reduce(operator.mul, iterable)
 
 
 def factorial(n):
-    return reduce(lambda x, y: x * y, range(1, n + 1, 1))
+    return functools.reduce(lambda x, y: x * y, range(1, n + 1, 1))
 
 
 def sum_digits(n):

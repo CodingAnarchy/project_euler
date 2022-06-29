@@ -1,4 +1,3 @@
-# coding=utf-8
 """
 The four adjacent digits in the 1000-digit number that have the greatest
 product are 9 × 9 × 8 × 9 = 5832.
@@ -53,7 +52,7 @@ num = """\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450"""
 
-L = map(int, num)
+L = list(map(int, num))
 n = 13
 window = deque(L[0:n])
 product = prod(window)
@@ -66,4 +65,4 @@ for i in range(len(L) - n):
     if val > product:
         product = val
 
-print product
+print(product)
