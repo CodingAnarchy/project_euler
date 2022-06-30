@@ -28,5 +28,4 @@ for i in range(1, 1000000):
                 max_length = [i, new_length]
 
 elapsed = (time.time() - start)
-print "found %s at length %s in %s seconds" % (max_length[0], max_length[1],
-                                               elapsed)
+print("found %s at length %s in %s seconds" % (max_length[0], max_length[1], elapsed))

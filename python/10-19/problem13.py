@@ -107,4 +107,4 @@ st = [int(i) for i in st.split("\n")]
 S = sum(st)
 
 elapsed = (time.time() - start)
-print "found %s in %s seconds" % (S, elapsed)
+print("found %s in %s seconds" % (S, elapsed))

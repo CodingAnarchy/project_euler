@@ -39,5 +39,5 @@ while True:
             if x < math.sqrt(a):
                 l.append(a // x)
             if len(l) > 500:
-                print a
+                print(a)
                 sys.exit(0)

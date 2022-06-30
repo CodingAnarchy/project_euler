@@ -55,4 +55,4 @@ for i in range(3, 20):
 
 elapsed = (time.time() - start)
 
-print "%s found in %s seconds" % (max_prod, elapsed)
+print("%s found in %s seconds" % (max_prod, elapsed))

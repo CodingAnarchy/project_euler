@@ -5,4 +5,4 @@ Find the sum of all the primes below two million.
 """
 from lib.primes import primes_sieve
 
-print sum(primes_sieve(2000000))
+print(sum(primes_sieve(2000000)))
