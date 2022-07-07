@@ -2,7 +2,7 @@
 
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-require_relative 'lib/primes'
+require_relative '../lib/primes'
 
 def smallest_evenly_divisible(limit)
   mults = Primes.multiplicity(limit)

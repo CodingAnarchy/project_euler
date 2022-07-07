@@ -2,6 +2,6 @@
 
 # What is the 10 001st prime number?
 
-require_relative 'lib/primes'
+require_relative '../lib/primes'
 
 puts Primes.fast_nth(10_001)

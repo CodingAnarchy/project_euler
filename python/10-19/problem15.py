@@ -14,4 +14,4 @@ def route_num(cube_size):
 start = time.time()
 n = route_num(20)
 elapsed = (time.time() - start)
-print "%s found in %s seconds" % (n, elapsed)
+print("%s found in %s seconds" % (n, elapsed))

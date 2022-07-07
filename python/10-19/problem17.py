@@ -23,8 +23,8 @@ T = 8
 total = 0
 for i in range(1, 1000):
     c = i % 10  # singles digit
-    b = ((i % 100) - c) / 10  # tens digit
-    a = ((i % 1000) - (b * 10) - c) / 100  # hundreds digit
+    b = ((i % 100) - c) // 10  # tens digit
+    a = ((i % 1000) - (b * 10) - c) // 100  # hundreds digit
 
     if a != 0:
         total += S[a] + H  # "S[a] hundred
@@ -38,4 +38,4 @@ for i in range(1, 1000):
 total += S[1] + T
 elapsed = time.time() - start
 
-print "%s found in %s seconds" % (total, elapsed)
+print("%s found in %s seconds" % (total, elapsed))

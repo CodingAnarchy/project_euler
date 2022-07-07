@@ -26,7 +26,7 @@
 # Find the thirteen adjacent digits in the 1000-digit number that have the
 # greatest product. What is the value of this product?
 
-require_relative 'lib/math_utils'
+require_relative '../lib/math_utils'
 
 number = <<~NUMBER.gsub(/[[:space:]]+/, "").strip
 73167176531330624919225119674426574742355349194934

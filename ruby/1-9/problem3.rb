@@ -2,7 +2,7 @@
 
 # What is the largest prime factor of the number 600851475143?
 
-require_relative "lib/primes"
+require_relative "../lib/primes"
 
 def prime_factors(n)
   prime_limit = Math.sqrt(n).ceil
